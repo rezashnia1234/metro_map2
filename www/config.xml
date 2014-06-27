@@ -59,12 +59,13 @@
 	
     <!-- Define app splash screen for each platform. -->
 	<gap:splash src="splash.png" />
-	
+	<!--
 	<gap:splash src="img/splash/splash_bkg.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
 	<gap:splash src="img/splash/splash_bkg_landscape.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
-	<!-- Retina iPad -->
 	<gap:splash src="img/splash/splash_bkg.png" gap:platform="ios" width="1536" height="2048" />
 	<gap:splash src="img/splash/splash_bkg_landscape.png" gap:platform="ios" width="2048" height="1536" />
+	-->
+    <gap:splash src="splash-iphone.png" gap:platform="ios"     width="640" height="1136" />
 
 	
 	<access origin="*"/> <!-- allow local pages -->
