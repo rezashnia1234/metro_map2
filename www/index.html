@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone-no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>Metro Map</title>
+	
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="phonegap.js"></script>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--
+  <script type="text/javascript">
+ 	   function OnLoad(){
+		 document.addEventListener('deviceready', function(){
+			 cordova.plugins.ZoomControl.ZoomControl("true");
+		 }, function(){
+			 alert('error deviceready');
+		 });
+		 
+	   }
+	</script>
+-->
+	<script type="application/javascript" src="js/iscroll.js"></script>
+
+	<script type="text/javascript">
+		var myScroll;
+		function loaded() {
+			myScroll = new iScroll('wrapper',
+			{ zoom:true, zoomMax: 4 });
+		}
+		document.addEventListener('DOMContentLoaded', loaded, false);
+	</script>
+  </head>
+<!--<body onload="OnLoad();">-->
+<body>
+	<div id="wrapper" style="width:100%">
+		<img src="metro.png" width="1136" alt="" style="max-width:100%; height:auto;" />
+	</div>
+	<script>loaded();</script>
+</body>
+</html>
